@@ -1,9 +1,30 @@
 # Docker Hello World
 
-$ git clone https://github.com/joaopcnogueira/hello-world-docker.git
+### Instructions
 
-$ cd hello-world-docker
+Clone the repository:
+```console
+foo@bar:~$ git clone https://github.com/joaopcnogueira/hello-world-docker.git
+foo
+```
 
-$ docker build -t hello-world-app .
+Go to hello-world-docker folder:
+```console
+foo@bar:~$ cd hello-world-docker
+foo
+```
 
-$ docker run -it --rm --name my-running-app hello-world-app
+Build the docker: 
+```console
+foo@bar:~$ docker build -t hello-world-app .
+foo
+```
+Run the app with either the first command below or the second:
+```console
+foo@bar:~$ docker run -it --rm --name my-running-app hello-world-app
+foo
+```
+```console
+foo@bar:~$ docker run hello-world-app
+foo
+```
